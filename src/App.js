@@ -4,11 +4,11 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react/cjs/react.development';
 import ReactLoading from 'react-loading';
 
-
 function App() {
+  const MIN_CHARACTERS = 50
   const form = useRef();
   const [disabled, setDisabled] = useState(true)
-  const [minCharacter, setCount] = useState(40)
+  const [minCharacter, setCount] = useState(MIN_CHARACTERS)
   const [isLoading, setLoad] = useState(false)
   const [concluded, setConcluded] = useState(false)
 
@@ -26,8 +26,8 @@ ${error}`);
 
   const handleMessageInput = (e) => {
     const length = e.target.value.length
-    setCount(40 - length)
-    setDisabled(40 - length > 0);
+    setCount(MIN_CHARACTERS - length)
+    setDisabled(MIN_CHARACTERS - length > 0);
   }
 
   return (
