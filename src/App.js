@@ -6,10 +6,10 @@ import ReactLoading from 'react-loading';
 function App() {
   const MIN_CHARACTERS = 50
   const form = useRef();
-  const [disabled, setDisabled] = useState(true)
-  const [minCharacter, setCount] = useState(MIN_CHARACTERS)
-  const [isLoading, setLoad] = useState(false)
-  const [concluded, setConcluded] = useState(false)
+  const [disabled, setDisabled] = React.useState(true)
+  const [minCharacter, setCount] = React.useState(MIN_CHARACTERS)
+  const [isLoading, setLoad] = React.useState(false)
+  const [concluded, setConcluded] = React.useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
