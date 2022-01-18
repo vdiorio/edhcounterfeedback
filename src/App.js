@@ -46,12 +46,12 @@ ${error}`);
       <div className="input-container ic1">
         <input name="user_name" id="name" className="input" type="text" placeholder=" " />
         <div className="cut"></div>
-        <label for="name" className="placeholder">Seu nome</label>
+        <label htmlFor="name" className="placeholder">Seu nome</label>
       </div>
       <div className="input-container ic2">
         <input name="user_email" id="email" className="input" type="text" placeholder=" " />
         <div className="cut cut-short"></div>
-        <label for="email" className="placeholder">Email *</label>
+        <label htmlFor="email" className="placeholder">Email *</label>
       </div>
       <div className="input-container ic2">
         <select
@@ -64,12 +64,12 @@ ${error}`);
           <option>Android</option>
         </select>
         <div className="cut"></div>
-        <label for="dispositivo" className="placeholder">Dispositivo *</label>
+        <label htmlFor="dispositivo" className="placeholder">Dispositivo *</label>
       </div>
       <div className="text-container ic2">
         <textarea name="message" id="message" className="input" placeholder=" " onChange={handleMessageInput} />
         <div className="cut cut-long"></div>
-        <label for="message" className="placeholder">Sua mensagem *</label>
+        <label htmlFor="message" className="placeholder">Sua mensagem *</label>
       </div>
       <span className="count">{disabled ? minCharacter : 0}</span>
       {isLoading
