@@ -1,8 +1,6 @@
-import React from 'react';
-import { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 import emailjs from '@emailjs/browser';
-import { useState } from 'react/cjs/react.development';
 import ReactLoading from 'react-loading';
 
 function App() {
