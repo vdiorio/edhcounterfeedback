@@ -3,7 +3,6 @@ import './App.css';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react/cjs/react.development';
 import ReactLoading from 'react-loading';
-import ReactModal from 'react-modal';
 
 
 function App() {
