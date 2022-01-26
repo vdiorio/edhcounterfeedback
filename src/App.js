@@ -70,7 +70,7 @@ ${error}`);
         <div className="cut cut-long"></div>
         <label htmlFor="message" className="placeholder">Sua mensagem *</label>
       </div>
-      <span className="count">{disabled ? minCharacter : 0}</span>
+      <span className={disabled ? 'count' : 'finished'} >{disabled ? minCharacter : 0}</span>
       {isLoading
         ? <div className='submit'><ReactLoading /></div>
         : <button

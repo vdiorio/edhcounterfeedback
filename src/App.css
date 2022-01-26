@@ -161,3 +161,8 @@ textarea {
   color: #dc2f55;
   float: right;
 }
+
+.finished {
+  color: white;
+  float: right;
+}
