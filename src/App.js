@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import emailjs from '@emailjs/browser';
 import ReactLoading from 'react-loading';
 
 function App() {
-  const MIN_CHARACTERS = 50
+  const MIN_CHARACTERS = 10
   const form = useRef();
   const [disabled, setDisabled] = React.useState(true)
   const [minCharacter, setCount] = React.useState(MIN_CHARACTERS)
